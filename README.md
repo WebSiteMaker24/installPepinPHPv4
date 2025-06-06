@@ -73,38 +73,35 @@ int main()
   return 0;
 }
 ```
-Compilation
+
+---
+## Compilation
 gcc installPepinPHP.c -o installPepinPHP.exe
-Prérequis
-MinGW ou TDM-GCC installé avec le dossier bin dans la variable PATH
 
-Git installé et accessible en ligne de commande
+## Prérequis
 
-MySQL ou MariaDB en cours d’exécution (via MAMP, XAMPP, ou service local)
+- MinGW ou TDM-GCC installé avec le dossier `bin` dans la variable PATH  
+- Git installé et accessible en ligne de commande  
+- MySQL ou MariaDB en cours d’exécution (via MAMP, XAMPP, ou service local)  
+- Visual Studio Code installé et `code` dans la variable PATH  
 
-Visual Studio Code installé et code dans la variable PATH
+## Explications détaillées
 
-Explications détaillées
-Entrée utilisateur : le programme demande un nom de projet. Si rien n’est saisi, il utilise "PepinPHPv4" par défaut.
+- **Entrée utilisateur** : le programme demande un nom de projet. Si rien n’est saisi, il utilise *"PepinPHPv4"* par défaut.  
+- **Suppression dossier existant** : il supprime l’ancien dossier *PepinPHPv4* sur le bureau pour éviter les conflits.  
+- **Clonage Git** : il clone le dépôt officiel dans un dossier temporaire *PepinPHPTemp*.  
+- **Renommage du dossier** : *PepinPHPTemp* est renommé avec le nom choisi.  
+- **Renommage du fichier `.env`** : dans le dossier `core`, si un fichier `env.txt` existe, il est renommé `.env` (format attendu pour la configuration).  
+- **Ouverture dans VS Code** : le dossier du projet est ouvert automatiquement dans Visual Studio Code.  
+- **Lancement du serveur et navigateur** : un serveur PHP local démarre sur le port 8000, et le navigateur ouvre automatiquement la page d’accueil.  
 
-Suppression dossier existant : il supprime l’ancien dossier PepinPHPv4 sur le bureau pour éviter les conflits.
+## Utilisation
 
-Clonage Git : il clone le dépôt officiel dans un dossier temporaire PepinPHPTemp.
+1. Compiler puis exécuter le programme (`installPepinPHP.exe`).  
+2. Suivre les instructions pour entrer un nom de projet.  
+3. Le reste est automatisé.  
 
-Renommage du dossier : PepinPHPTemp est renommé avec le nom choisi.
-
-Renommage du fichier .env : dans le dossier core, si un fichier env.txt existe, il est renommé .env (format attendu pour la configuration).
-
-Ouverture dans VS Code : le dossier du projet est ouvert automatiquement dans VS Code.
-
-Lancement du serveur et navigateur : un serveur PHP local démarre sur le port 8000, et le navigateur ouvre automatiquement la page d’accueil.
-
-Utilisation
-Compiler puis exécuter le programme (installPepinPHP.exe).
-
-Suivre les instructions pour entrer un nom de projet.
-
-Le reste est automatisé.
+---
 
 Si tu souhaites, je peux aussi t’aider à créer un script PowerShell ou un batch Windows pour faire la même chose sans compiler.
 
