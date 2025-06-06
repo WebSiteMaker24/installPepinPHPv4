@@ -72,7 +72,7 @@ int main()
 
   return 0;
 }
-
+```
 Compilation
 gcc installPepinPHP.c -o installPepinPHP.exe
 Prérequis
